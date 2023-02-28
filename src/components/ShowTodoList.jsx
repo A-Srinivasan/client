@@ -37,7 +37,7 @@ export function ShowTodoList() {
     useEffect(
         function () {
             axios
-                .get("http://localhost:8000/api/todo")
+                .get("http://localhost:8000/api/todo", "https://todos-app.onrender.com")
                 .then((res) => {
                     console.log(res.data);
                     setTodo(res.data);
